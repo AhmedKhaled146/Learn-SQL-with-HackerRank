@@ -17,7 +17,7 @@ The CITY table is described as follows:
 <span style="color:#ff0000;">FROM</span> CITY 
 <span style="color:#ff0000;">WHERE</span> CountryCode = 'USA' 
 <span style="color:#ff0000;">AND</span> Population > 120000;
-
+```
 
 ### Select All
 **3. Query all columns (attributes) for every row in the CITY table.**
