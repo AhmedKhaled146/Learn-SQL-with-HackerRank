@@ -12,7 +12,12 @@ The CITY table is described as follows:
 ### Revising the Select Query II
 **2. Query the NAME field for all American cities in the CITY table with populations larger than 120000. The CountryCode for America is USA.**
 
-```<span color="#2e95d3"> SELECT </span>NAME <span color="#2e95d3">FROM</span> CITY <span color="#2e95d3">WHERE</span> CountryCode = 'USA' <span color="#2e95d3">AND</span> Population > 120000;```
+```sql
+<span style="color:#ff0000;">SELECT</span> NAME 
+<span style="color:#ff0000;">FROM</span> CITY 
+<span style="color:#ff0000;">WHERE</span> CountryCode = 'USA' 
+<span style="color:#ff0000;">AND</span> Population > 120000;
+
 
 ### Select All
 **3. Query all columns (attributes) for every row in the CITY table.**
