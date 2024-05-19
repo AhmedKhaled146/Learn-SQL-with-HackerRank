@@ -1,0 +1,1 @@
+Notes for solving the problem on SQL with The HackerRank site.
