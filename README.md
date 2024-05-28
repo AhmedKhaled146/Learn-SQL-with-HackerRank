@@ -80,5 +80,27 @@ FROM
 ### Weather Observation Station 5
 **4. Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.**
 ```sql
+SELECT CITY, LENGTH(CITY) AS LENGTH1
+FROM STATION
+ORDER BY LENGTH(CITY) ASC, CITY ASC
+LIMIT 1;
 
+
+SELECT CITY, LENGTH(CITY) AS LENGTH2
+FROM STATION
+ORDER BY LENGTH(CITY) DESC, CITY ASC
+LIMIT 1;
+```
+
+### Weather Observation Station 6
+**5. Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.**
+```sql
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY LIKE 'A%' 
+   OR CITY LIKE 'E%' 
+   OR CITY LIKE 'I%' 
+   OR CITY LIKE 'O%' 
+   OR CITY LIKE 'U%'
+ORDER BY CITY;
 ```
