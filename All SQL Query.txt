@@ -94,4 +94,21 @@ Last but certainly not least, we encounter DQL, the language dedicated to queryi
     - DELETE FROM "table_name WHERE age = "value"; ==> this will delete just the record have an age is value.
         |= DELETE FROM student WHERE name = 'ahmed';
 
+
+
+============================
+==== ## Start with DQL: ====
+============================
+
+# Get from the database:
+    - SELECT * FROM "table_name";
+        |= SELECT * FROM student;
         
+    - SELECT * FROM "table_name" WHERE age = "value";
+        |= SELECT * FROM student WHERE age = 25;
+
+    - SELECT age, name FROM "table_name" WHERE age = "value";
+        |= SELECT age, name FROM student WHERE age = 25;
+
+    - SELECT age, name FROM "table_name";
+        |= SELECT age, name FROM student;
