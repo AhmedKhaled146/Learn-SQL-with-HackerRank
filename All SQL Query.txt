@@ -133,10 +133,25 @@ Last but certainly not least, we encounter DQL, the language dedicated to queryi
     |= SELECT emp_id, last_name, salary, manager_id FROM employee WHERE manager_id NOT IN (100, 101, 200);
 
 • Between … AND …. (between two values - Inclusive).
-    |= Select last_name, salary from employee where salary between 1000 and 3000;
+    |= SELECT last_name, salary FROM employee WHERE salary between 1000 and 3000;
     
 • IN (set) (Match any of a list of values).
-    |= Select emp_id, last_name, salary, manager_id  From employee where manager_id IN (100, 101, 200);
+    |= SELECT emp_id, last_name, salary, manager_id  FROM employee WHERE manager_id IN (100, 101, 200);
 
 • Like (Match a character Pattern).
-    |= Select first_name from employee where first_name Like ‘ah%’;
+    |= SELECT first_name FROM employee WHERE first_name Like ‘ah%’;
+
+
+===============================================
+==== ## Start with Arithmetic Expressions: ====
+===============================================
+
+
+- SELECT last_name, salary, salary + 300 FROM employee;
+
+------------------------------------
+• Order of precedence: * , / , +, -.
+• You can enforce priority by adding parentheses.
+------------------------------------
+
+- SELECT last_name, salary, 10 * (salary + 300) FROM employee;
