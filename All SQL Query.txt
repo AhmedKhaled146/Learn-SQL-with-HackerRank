@@ -78,3 +78,20 @@ Last but certainly not least, we encounter DQL, the language dedicated to queryi
                                 (1, 'ahmed', 39),
                                 (2, 'khaled', 35),
                                 (3, 'hema', 30);
+
+# Update the table:
+    - UPDATE "table_name" SET age = "value"; ==> this will change all the records in the table with the same value.
+        |= UPDATE student SET age = "25";
+
+    - UPDATE "table_name" SET age = "value" WHERE age = "value" ==> this will change just the record have the name is value.
+        |= UPDATE student SET age = "25" WHERE name = 'ahmed';
+
+
+# Delete from the table:
+    - DELETE FROM "table_name"; ==> this will delete all the records in the table.
+        |= DELETE FROM student;
+
+    - DELETE FROM "table_name WHERE age = "value"; ==> this will delete just the record have an age is value.
+        |= DELETE FROM student WHERE name = 'ahmed';
+
+        
