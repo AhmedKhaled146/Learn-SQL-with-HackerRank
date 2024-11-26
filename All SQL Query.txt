@@ -112,3 +112,31 @@ Last but certainly not least, we encounter DQL, the language dedicated to queryi
 
     - SELECT age, name FROM "table_name";
         |= SELECT age, name FROM student;
+
+
+========================================================
+==== ## Start with Comparison & Logical Conditions: ====
+========================================================
+
+
+- SELECT last_name, salary FROM employee WHERE salary > 1000;
+
+- SELECT last_name, salary FROM employee WHERE salary < 1000;
+
+• AND.
+    |= SELECT last_name, salary FROM employee WHERE city = ‘Assiut’ AND salary > 1000;
+
+• OR.
+    |= SELECT last_name, salary FROM employee WHERE city = ‘Assiut’ OR salary > 1000;
+
+• NOT.
+    |= SELECT emp_id, last_name, salary, manager_id FROM employee WHERE manager_id NOT IN (100, 101, 200);
+
+• Between … AND …. (between two values - Inclusive).
+    |= Select last_name, salary from employee where salary between 1000 and 3000;
+    
+• IN (set) (Match any of a list of values).
+    |= Select emp_id, last_name, salary, manager_id  From employee where manager_id IN (100, 101, 200);
+
+• Like (Match a character Pattern).
+    |= Select first_name from employee where first_name Like ‘ah%’;
