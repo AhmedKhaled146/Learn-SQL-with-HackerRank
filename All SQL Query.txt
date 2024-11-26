@@ -1,0 +1,18 @@
+= The ABCs of Database: 
+
+Data Manipulation Language (DML): بعدل علي الداتا نفسها اللي عندي بعملها تعديل (بدخل داتا جديده - بمسح داتا موجوده اصلا - بعمل ابديت لداتا موجوده عندي )
+At the heart of database operations lies DML, the language responsible for manipulating data within the database. DML commands facilitate data records' insertion, updating, deletion, and retrieval. Common examples include INSERT, UPDATE, DELETE, and SELECT statements. DML essentially empowers us to perform CRUD operations (Create, Read, Update, Delete) on our data, ensuring its integrity and relevance.
+
+Data Definition Language (DDL): بعدل علي الاستراكشر نفسه بلعب فيه (ممكن اكريت تابل جديد - ممكن اعدل علي التابل دا اغير في الكولومز - ممكن امسح كولوم منه )
+Contrary to DML's focus on data manipulation, DDL governs the structure and schema of the database itself. DDL commands enable the creation, alteration, and deletion of database objects such as tables, indexes, views, and schemas. Examples of DDL statements include CREATE, ALTER, and DROP, which shape the blueprint of our data environment. Mastering DDL ensures the foundation of our database aligns with organizational needs and evolving requirements.
+
+Data Control Language (DCL):
+Security and access control are paramount in any database ecosystem, and that's precisely where DCL comes into play. DCL commands grant or revoke permissions to users, ensuring data confidentiality, integrity, and availability. With statements like GRANT and REVOKE, DCL empowers administrators to govern who can access specific data and what actions they can perform. By wielding DCL effectively, organizations fortify their data against unauthorized access and manipulation.
+
+Data Transaction Language (DTL): 
+In the realm of transaction management, DTL reigns supreme. DTL commands facilitate the management of transactions within a database, ensuring atomicity, consistency, isolation, and durability (ACID properties). Key DTL commands include BEGIN TRANSACTION, COMMIT, and ROLLBACK, which orchestrate the initiation, conclusion, and reversal of database transactions. Mastery of DTL guarantees the reliability and resilience of our data operations, even amidst complex transactional scenarios.
+
+Data Query Language (DQL): 
+Last but certainly not least, we encounter DQL, the language dedicated to querying data from the database. While SELECT statements fall under both DML and DQL categories, DQL emphasizes the retrieval and presentation of data rather than its manipulation. DQL enables us to formulate sophisticated queries to extract insights, generate reports, and drive decision-making processes. Proficiency in DQL empowers analysts and stakeholders to uncover valuable patterns and trends hidden within vast datasets.
+ 
+
