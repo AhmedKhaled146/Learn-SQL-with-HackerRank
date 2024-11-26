@@ -23,12 +23,58 @@ Last but certainly not least, we encounter DQL, the language dedicated to queryi
 # Create Database: 
     - CREATE DATABASE db_name;
         |= CREATE DATABASE School_system;
+
     - CREATE DATABASE IF NOT EXISTS db_name;
         |= CREATE DATABASE IF NOT EXISTS School_system;
 
 # Drop Database: 
     - DROP DATABASE db_name;
         |= DROP DATABASE School_system;
+
     - DROP DATABASE IF EXISTS db_name;
         |= DROP DATABASE IF EXISTS School_system;
 
+
+============================
+==== ## Start with DDL: ====
+============================
+
+
+# Create tables:
+    - CREATE TABLE table_name (column_name data_type, column_name data_type, ...);
+        |= CREATE TABLE student (id INT PRIMARY KEY, name VARCHAR(25), age INT);
+
+# Drop tables:
+    - DROP TABLE table_name;
+        |= DROP TABLE student;
+
+# Alter tables:
+    - Add column to table:
+        - ALTER TABLE table_name ADD column_name data_type, ...;
+            |= ALTER TABLE student ADD address char(40);
+    
+    - Drop column from table:
+        - ALTER TABLE table_name DROP COLUMN column_name;
+            |= ALTER TABLE student DROP COLUMN age;
+
+
+============================
+==== ## Start with DML: ====
+============================
+
+
+# Inert into tables:
+    - INSERT INTO "table_name” (column_1, column_2, column_3, ...) VALUES ("value_1", "value_2", ...)
+        |= INSERT INTO student (id, name, age) VALUES (1, 'ahmed', 25);
+
+    - INSERT INTO "table_name" VALUES ("value_1", "value_2", ...);
+        |= INSERT INTO student VALUES (1, 'ahmed', 25);
+
+    - INSERT INTO "table_name" VALUES ("value_1", "value_2", ...),
+                                      ("value_1", "value_2", ...),
+                                      ("value_1", "value_2", ...);
+
+        |= INSERT INTO student  (id, name, age) VALUES
+                                (1, 'ahmed', 39),
+                                (2, 'khaled', 35),
+                                (3, 'hema', 30);
