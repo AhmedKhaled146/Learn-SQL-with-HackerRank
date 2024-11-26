@@ -16,3 +16,19 @@ Data Query Language (DQL):
 Last but certainly not least, we encounter DQL, the language dedicated to querying data from the database. While SELECT statements fall under both DML and DQL categories, DQL emphasizes the retrieval and presentation of data rather than its manipulation. DQL enables us to formulate sophisticated queries to extract insights, generate reports, and drive decision-making processes. Proficiency in DQL empowers analysts and stakeholders to uncover valuable patterns and trends hidden within vast datasets.
  
 
+================================================================
+========================= ALL queries ==========================
+================================================================
+
+# Create Database: 
+    - CREATE DATABASE db_name;
+        |= CREATE DATABASE School_system;
+    - CREATE DATABASE IF NOT EXISTS db_name;
+        |= CREATE DATABASE IF NOT EXISTS School_system;
+
+# Drop Database: 
+    - DROP DATABASE db_name;
+        |= DROP DATABASE School_system;
+    - DROP DATABASE IF EXISTS db_name;
+        |= DROP DATABASE IF EXISTS School_system;
+
