@@ -177,3 +177,42 @@ ORDER BY CITY;
 ```sql
 
 ```
+
+### Revising Aggregations - The Sum Function
+**11.Query the total population of all cities in CITY where District is California.**
+```sql
+SELECT SUM(Population) FROM CITY WHERE District = 'California';
+```
+
+### Average Population
+**12. Query the average population for all cities in CITY rounded down to the nearest integer.**
+```sql
+SELECT FLOOR(AVG(Population)) FROM CITY;
+```
+
+### African Cities
+**13. Given the CITY and COUNTRY tables, query the names of all cities where the CONTINENT is 'Africa'. Note: CITY.CountryCode and COUNTRY.Code are matching key columns**
+```sql
+SELECT Name FROM CITY WHERE CountryCode IN (SELECT Code FROM COUNTRY WHERE Continent = 'Africa');
+```
+
+### Average Population of Each Continent
+**14. Given the CITY and COUNTRY tables, query the names of all the continents (COUNTRY.Continent) and their respective average city populations (CITY.Population) rounded down to the nearest integer. Note: CITY.CountryCode and COUNTRY.Code are matching key columns**
+```sql
+SELECT COUNTRY.Continent, FLOOR(AVG(CITY.Population)) AS AvgPopulation
+FROM CITY
+JOIN COUNTRY ON CITY.CountryCode = COUNTRY.Code
+GROUP BY COUNTRY.Continent;
+```
+
+### Placements
+**15. You are given three tables: Students, Friends and Packages. Students contains two columns: ID and Name. Friends contains two columns: ID and Friend_ID (ID of the ONLY best friend). Packages contains two columns: ID and Salary (offered salary in $ thousands per month).**
+```sql
+SELECT s.Name
+FROM Students s
+JOIN Friends f ON s.ID = f.ID
+JOIN Packages p1 ON s.ID = p1.ID
+JOIN Packages p2 ON f.Friend_ID = p2.ID
+WHERE p2.Salary > p1.Salary
+ORDER BY p2.Salary;
+```
