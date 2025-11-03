@@ -204,6 +204,13 @@ FROM CITY
 JOIN COUNTRY ON CITY.CountryCode = COUNTRY.Code
 GROUP BY COUNTRY.Continent;
 ```
+<br>
+
+![alt text](1.png)
+![alt text](2.png)
+![alt text](3.png)
+![alt text](4.png)
+
 
 ### Placements
 **15. You are given three tables: Students, Friends and Packages. Students contains two columns: ID and Name. Friends contains two columns: ID and Friend_ID (ID of the ONLY best friend). Packages contains two columns: ID and Salary (offered salary in $ thousands per month).**
