@@ -207,7 +207,7 @@ GROUP BY COUNTRY.Continent;
 <br>
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="![alt text](1.png)" width="24%" alt="image 1">
+    <img src="1.png" width="24%" alt="image 1">
     <img src="2.png" width="24%" alt="image 2">
     <img src="3.png" width="24%" alt="image 3">
     <img src="4.png" width="24%" alt="image 4">
